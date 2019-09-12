@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{606578EF-2C37-401E-9DDC-9644A2DDDDC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FitnFun</RootNamespace>
+    <AssemblyName>FitnFun</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boundary\Data Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\Data Member.Designer.cs">
+      <DependentUpon>Data Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\DataPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\DataPegawai.Designer.cs">
+      <DependentUpon>DataPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\FormUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\FormUtama.Designer.cs">
+      <DependentUpon>FormUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\Jadwal Senam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\Jadwal Senam.Designer.cs">
+      <DependentUpon>Jadwal Senam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\LaporanAktivasiMGM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\LaporanAktivasiMGM.Designer.cs">
+      <DependentUpon>LaporanAktivasiMGM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\LaporanAktivasiReguler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\LaporanAktivasiReguler.Designer.cs">
+      <DependentUpon>LaporanAktivasiReguler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\LaporanStruck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\LaporanStruck.Designer.cs">
+      <DependentUpon>LaporanStruck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\LaporanStruktSenamPaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\LaporanStruktSenamPaket.Designer.cs">
+      <DependentUpon>LaporanStruktSenamPaket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\LaporanStruktSenamReguler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\LaporanStruktSenamReguler.Designer.cs">
+      <DependentUpon>LaporanStruktSenamReguler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\LaporanStrutkAktivasiCouple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\LaporanStrutkAktivasiCouple.Designer.cs">
+      <DependentUpon>LaporanStrutkAktivasiCouple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\MemberCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\MemberCard.Designer.cs">
+      <DependentUpon>MemberCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\Presensi Instruktur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\Presensi Instruktur.Designer.cs">
+      <DependentUpon>Presensi Instruktur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\Presensi Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\Presensi Member.Designer.cs">
+      <DependentUpon>Presensi Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\PresensiPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\PresensiPegawai.Designer.cs">
+      <DependentUpon>PresensiPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\Promo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\Promo.Designer.cs">
+      <DependentUpon>Promo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\TransaksiAktivasiCouple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\TransaksiAktivasiCouple.Designer.cs">
+      <DependentUpon>TransaksiAktivasiCouple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\TransaksiAktivasiMemberGetMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\TransaksiAktivasiMemberGetMember.Designer.cs">
+      <DependentUpon>TransaksiAktivasiMemberGetMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\TransaksiAktivasiReguler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\TransaksiAktivasiReguler.Designer.cs">
+      <DependentUpon>TransaksiAktivasiReguler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\TransaksiDepositSenamPaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\TransaksiDepositSenamPaket.Designer.cs">
+      <DependentUpon>TransaksiDepositSenamPaket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boundary\TransaksiSenamReguler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boundary\TransaksiSenamReguler.Designer.cs">
+      <DependentUpon>TransaksiSenamReguler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\JadwalControl.cs" />
+    <Compile Include="Control\LoginControl.cs" />
+    <Compile Include="Control\MemberControl.cs" />
+    <Compile Include="Control\PegawaiControl.cs" />
+    <Compile Include="Control\PresensiInstrukturControl.cs" />
+    <Compile Include="Control\PresensiMemberControl.cs" />
+    <Compile Include="Control\PromoControl.cs" />
+    <Compile Include="Control\TransaksiControl.cs" />
+    <Compile Include="dsFitnFun.cs">
+      <DependentUpon>dsFitnFun.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsFitnFun.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFitnFun.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Jadwal.cs" />
+    <Compile Include="Entity\Member.cs" />
+    <Compile Include="Entity\Pegawai.cs" />
+    <Compile Include="Entity\PresensiInstruktur.cs" />
+    <Compile Include="Entity\PresensiMember.cs" />
+    <Compile Include="Entity\PresensiPegawai.cs" />
+    <Compile Include="Entity\Promo.cs" />
+    <Compile Include="Entity\Transaksi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\RptAktivasiCouple.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptAktivasiCouple.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptAktivasiMGM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptAktivasiMGM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptMemberCard.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptMemberCard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReportStruck.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportStruck.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptSenamPaket.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSenamPaket.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptTransaksiReguler.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptTransaksiReguler.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptAktivasiReguler.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptAktivasiReguler.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShowException.cs" />
+    <EmbeddedResource Include="Boundary\Data Member.resx">
+      <DependentUpon>Data Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\DataPegawai.resx">
+      <DependentUpon>DataPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\FormUtama.resx">
+      <DependentUpon>FormUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\Jadwal Senam.resx">
+      <DependentUpon>Jadwal Senam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\LaporanAktivasiMGM.resx">
+      <DependentUpon>LaporanAktivasiMGM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\LaporanAktivasiReguler.resx">
+      <DependentUpon>LaporanAktivasiReguler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\LaporanStruck.resx">
+      <DependentUpon>LaporanStruck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\LaporanStruktSenamPaket.resx">
+      <DependentUpon>LaporanStruktSenamPaket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\LaporanStruktSenamReguler.resx">
+      <DependentUpon>LaporanStruktSenamReguler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\LaporanStrutkAktivasiCouple.resx">
+      <DependentUpon>LaporanStrutkAktivasiCouple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\MemberCard.resx">
+      <DependentUpon>MemberCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\Presensi Instruktur.resx">
+      <DependentUpon>Presensi Instruktur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\Presensi Member.resx">
+      <DependentUpon>Presensi Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\PresensiPegawai.resx">
+      <DependentUpon>PresensiPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\Promo.resx">
+      <DependentUpon>Promo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\TransaksiAktivasiCouple.resx">
+      <DependentUpon>TransaksiAktivasiCouple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\TransaksiAktivasiMemberGetMember.resx">
+      <DependentUpon>TransaksiAktivasiMemberGetMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\TransaksiAktivasiReguler.resx">
+      <DependentUpon>TransaksiAktivasiReguler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\TransaksiDepositSenamPaket.resx">
+      <DependentUpon>TransaksiDepositSenamPaket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boundary\TransaksiSenamReguler.resx">
+      <DependentUpon>TransaksiSenamReguler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report\RptAktivasiCouple.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAktivasiCouple.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptAktivasiMGM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAktivasiMGM.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptMemberCard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptMemberCard.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportStruck.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportStruck.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSenamPaket.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSenamPaket.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptTransaksiReguler.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTransaksiReguler.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptAktivasiReguler.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAktivasiReguler.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="dsFitnFun.xsc">
+      <DependentUpon>dsFitnFun.xsd</DependentUpon>
+    </None>
+    <None Include="dsFitnFun.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFitnFun.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsFitnFun.xss">
+      <DependentUpon>dsFitnFun.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
